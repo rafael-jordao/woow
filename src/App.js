@@ -14,7 +14,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/login/*" element={<Login />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/account" element={<Account />} />
           </Routes>
         </AuthContextProvider>

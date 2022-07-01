@@ -2,7 +2,6 @@ import React from 'react'
 import { UserAuth } from '../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
 
-
 const Login = () => {
   const { googleSignIn, user } = UserAuth();
   const navigate = useNavigate();
@@ -16,11 +15,13 @@ const Login = () => {
   }
 
   React.useEffect(() => {
-    if(user) navigate('/account')
+    if (user) navigate('/account')
   }, [user])
 
+  console.log(user)
+
   return (
-    <div>
+    <div className='container'>
       <button onClick={handleGoogleLogin}>Login with Google</button>
     </div>
   )
