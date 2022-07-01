@@ -1,6 +1,7 @@
 import React from 'react'
 import { UserAuth } from '../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const { googleSignIn, user } = UserAuth();
@@ -9,7 +10,6 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       await googleSignIn()
-
     } catch (err) {
       console.log(err)
     }
@@ -19,10 +19,14 @@ const Login = () => {
     if (user) navigate('/account')
   }, [user, navigate])
 
+
   return (
     <div className='middle'>
       <h1>It's easy. Use your's Google Account to login</h1>
       <button onClick={handleGoogleLogin}>Login with Google</button>
+      <br />
+      <br />
+      <Link to="/">Return to Home</Link>
     </div>
   )
 }
