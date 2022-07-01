@@ -6,11 +6,14 @@ const url = 'https://owen-wilson-wow-api.herokuapp.com/wows/random'
 const Account = () => {
     const { user } = UserAuth()
     const [data, setData] = React.useState([]);
+    const [loading, setLoading] = React.useState(false)
 
     const handleWowClick = async () => {
+        setLoading(true)
         const response = await fetch(url);
         const json = await response.json();
         setData(json)
+        setLoading(false)
         console.log(json)
     }
 
@@ -26,7 +29,8 @@ const Account = () => {
                     </div>
                 )
             })}
-            <button onClick={handleWowClick}>Get a new WooW</button>
+            {loading ? <button disabled>Loading...</button> : <button onClick={handleWowClick}>Get a new WooW</button> }
+            
         </div>
     )
 }
