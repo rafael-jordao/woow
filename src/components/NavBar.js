@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <header className={styles.header}>
       <h2>WooW</h2>
-      {user ? <Link onClick={handleSignOut} to="/">Logout</Link> : <Link to="/login">Sigin</Link>}
+      {user ? <Link onClick={handleSignOut} to="/">Logout</Link> : <Link to="/login">Sign in</Link>}
     </header>
   )
 }
