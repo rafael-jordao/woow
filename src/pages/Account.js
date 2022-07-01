@@ -14,18 +14,19 @@ const Account = () => {
         const json = await response.json();
         setData(json)
         setLoading(false)
+        localStorage.setItem('user', user.accessToken)
         console.log(json)
     }
-
+    
     return (
         <div className='middle'>
-            <h1>Está pronto para muitos WooWs, {user.displayName}?</h1>
-            <p>Clique no botão abaixo</p>
+            <h1>Welcome, {user.displayName}!</h1>
+            <p>Click to see what happens</p>
             {data.map((movie) => {
                 return (
                     <div key={movie.movie}>
                         <h2>{movie.movie}</h2>
-                        <video controls width="800" src={movie.video['1080p']} />
+                        <video controls src={movie.video['1080p']} />
                     </div>
                 )
             })}

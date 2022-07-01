@@ -18,8 +18,7 @@ export const AuthContextProvider = ({ children }) => {
 
     React.useEffect(() => {
         const onSubscribe = onAuthStateChanged(auth, (currentUser) => {
-            setUser(currentUser)
-            console.log(currentUser)
+            setUser(currentUser);
         })
         return () => {
             onSubscribe()

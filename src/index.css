@@ -9,14 +9,9 @@ body {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10rem;
-}
 
 .middle {
   justify-content: center;
@@ -37,3 +32,6 @@ header {
   padding: 1rem;
 }
 
+video {
+  width: 100%;
+}

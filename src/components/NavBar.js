@@ -12,12 +12,14 @@ const NavBar = () => {
     } catch (err) {
       console.log(err)
     }
+
+    localStorage.clear();
   }
 
   return (
     <header className={styles.header}>
       <h2>WooW</h2>
-      {user ? <Link onClick={handleSignOut} to="/">Logout</Link> : <Link to="/login">Sign in</Link>}
+      {user ? <Link onClick={handleSignOut} to="/">Logout</Link> : <Link to="/login">Sign </Link>}
     </header>
   )
 }

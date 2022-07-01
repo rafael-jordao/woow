@@ -1,0 +1,49 @@
+[debug] [2022-07-01T12:37:06.437Z] ----------------------------------------------------------------------
+[debug] [2022-07-01T12:37:06.438Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-07-01T12:37:06.438Z] CLI Version:   11.2.0
+[debug] [2022-07-01T12:37:06.438Z] Platform:      darwin
+[debug] [2022-07-01T12:37:06.438Z] Node Version:  v16.14.0
+[debug] [2022-07-01T12:37:06.442Z] Time:          Fri Jul 01 2022 09:37:06 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-07-01T12:37:06.442Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-01T12:37:06.468Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-01T12:37:06.468Z] > authorizing via signed-in user (rafaeljordao.picado@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/rafaeljordao/Documents/my-codes/woow
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-01T12:37:09.055Z] Using project from CLI flag: woow-f71c4
+[debug] [2022-07-01T12:37:09.058Z] > refreshing access token with scopes: []
+[debug] [2022-07-01T12:37:09.060Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-01T12:37:09.061Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-01T12:37:09.519Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-01T12:37:09.519Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-01T12:37:09.565Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/woow-f71c4 [none]
+[debug] [2022-07-01T12:37:10.886Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/woow-f71c4 200
+[debug] [2022-07-01T12:37:10.886Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/woow-f71c4 {"projectId":"woow-f71c4","projectNumber":"509918145191","displayName":"woow","name":"projects/woow-f71c4","resources":{"hostingSite":"woow-f71c4"},"state":"ACTIVE"}
+[info] i  Using project woow-f71c4 (woow) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

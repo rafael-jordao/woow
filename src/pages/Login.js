@@ -9,19 +9,19 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       await googleSignIn()
+
     } catch (err) {
       console.log(err)
     }
-  }
+  };
 
   React.useEffect(() => {
     if (user) navigate('/account')
-  }, [user])
-
-  console.log(user)
+  }, [user, navigate])
 
   return (
-    <div className='container'>
+    <div className='middle'>
+      <h1>It's easy. Use your's Google Account to login</h1>
       <button onClick={handleGoogleLogin}>Login with Google</button>
     </div>
   )
